@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Blog - Box Kultury</title>
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+    <!-- Header START -->
+    <header class="sticky">
+        <div class="logo-container ">
+            <img id="logo-dark" class="theme-logo dark-theme-logo" src="/static/images/logo-box-kultury-text-dark.svg"
+                alt="Logo Box Kultury">
+            <img id="logo-light" class="theme-logo light-theme-logo"
+                src="/static/images/logo-box-kultury-text-light.svg" alt="Logo Box Kultury">
+            <h2>Zanurz się w świat kultury</h2>
+        </div>
+        <nav class="nav-bar" id="main-nav">
+            <!-- Sticky logo container -->
+            <div class="sticky-logo-container">
+                <img id="sticky-logo-dark" src="/static/images/logo-box-kultury-dark.svg" alt="Logo Box Kultury"
+                    class="sticky-logo dark-theme-logo">
+                <img id="sticky-logo-light" src="/static/images/logo-box-kultury-light.svg" alt="Logo Box Kultury"
+                    class="sticky-logo light-theme-logo">
+            </div>
+            <div class="responsive-logo-container">
+                <img id="responsive-logo-dark" class="theme-logo dark-theme-logo"
+                    src="/static/images/logo-box-kultury-text-dark.svg" alt="Logo Box Kultury">
+                <img id="responsive-logo-light" class="theme-logo light-theme-logo"
+                    src="/static/images/logo-box-kultury-text-light.svg" alt="Logo Box Kultury">
+            </div>
+
+            <!-- Container for centering the navigation menu -->
+            <div class="nav-menu-container">
+                <ul>
+                    <li><a class="nav-link" href="#">Muzyczne pomniki</a></li>
+                    <li><a class="nav-link" href="#">Kino godne polecenia</a></li>
+                    <li><a class="nav-link" href="#">Książki z górnej półki</a></li>
+                    <li><a class="nav-link" href="#">Inspiracja krótkim słowem</a></li>
+                </ul>
+            </div>
+
+            <!-- Theme toggle button and sidebar toggle button -->
+            <div class="menu-btn-container">
+                <button id="theme-toggle" class="menu-btn theme-btn" aria-label="Zmień motyw">
+                    <span id="theme-icon"><i class="fa-solid"></i></span>
+                </button>
+                <button id="sidebar-toggle" class="menu-btn sidebar-btn" aria-label="Otwórz menu">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Header END -->
+    <!-- Sidebar START-->
+    <aside class="sidebar" id="side-bar">
+        <button class="menu-btn" id="close-btn">
+            <span><i class="fa-solid fa-close"></i></span>
+        </button>
+        <div class="sidebar-logo">
+            <img id="logo-dark" class="theme-logo dark-theme-logo" src="/static/images/logo-box-kultury-text-dark.svg"
+                alt="Logo Box Kultury">
+            <img id="logo-light" class="theme-logo light-theme-logo"
+                src="/static/images/logo-box-kultury-text-light.svg" alt="Logo Box Kultury">
+        </div>
+
+        <ul>
+            <li><a href="#" class="nav-link">Start</a></li>
+            <li><a href="#" class="nav-link">O mnie</a></li>
+            <li><a href="#" class="nav-link">Kontakt</a></li>
+        </ul>
+
+        <div class="br-line"></div>
+
+        <ul>
+            <li><a href="#" class="nav-link">Muzyczne pomniki</a></li>
+            <li><a href="#" class="nav-link">Kino godne polecenia</a></li>
+            <li><a href="#" class="nav-link">Książki z górnej półki</a></li>
+            <li><a href="#" class="nav-link">Inspiracja krótkim słowem</a></li>
+            <li><a href="#" class="nav-link">W ogniu pytań</a></li>
+            <li><a href="#" class="nav-link">Epoki literackie</a></li>
+        </ul>
+
+        <!-- <div class="br-line"></div> -->
+    </aside>
+    <!-- Sidebar END -->
+
+    <main class="content-wrapper">
+        <section class="content__quotes">
+            <div class="quote">
+                <h2 class="quote__title">Cytat dnia</h2>
+                <div class="quote__content">
+                    <p class="quote__text">"Błądzę w ciemnościach wspomnień i w rezultacie mylę się w rzeczach bardzo
+                        zasadniczych"</p>
+                    <div class="quote__author">
+                        <strong>Antoine de Saint-Exupéry</strong> – z książki Mały Książę
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content__featured-posts">
+            <div class="featured-post-card">
+                <a href="#" class="featured-post-card__link">
+                    <span class="featured-post-card__category featured-post-card__category--blue">Muzyczne pomniki</span>
+                    <h2 class="featured-post-card__name">Muzyczna Podróż Dojrzewającego Weterana</h2>
+                    <p class="featured-post-card__excerpt">Knopfler w "Privateering" snuje intymne opowieści o życiu i podróżach, łącząc blues, rock i folk w pełnej emocji, ponadczasowej muzyce.</p>
+                    <p class="featured-post-card__date">2024-10-12</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="content__related-posts">
+            <div class="related-post-card">
+                <a href="#" class="related-post-card__link">
+                    <div class="related-post-card__photo">
+                        <img src="https://picsum.photos/300/200?random=1" alt="Losowe zdjęcie">
+                    </div>
+                    <div class="related-post-card__content">
+                        <span class="related-post-card__category related-post-card__category--green">Muzyczne pomniki</span>
+                        <h2 class="related-post-card__name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                        <p class="related-post-card__date">2024-10-12</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="related-post-card">
+                <a href="#" class="related-post-card__link">
+                    <div class="related-post-card__photo">
+                        <img src="https://picsum.photos/300/200?random=2" alt="Losowe zdjęcie">
+                    </div>
+                    <div class="related-post-card__content">
+                        <span class="related-post-card__category related-post-card__category--red">Książki z górnej półki</span>
+                        <h2 class="related-post-card__name">Lorem ipsum, dolor sit amet consectetur adipisicing.</h2>
+                        <p class="related-post-card__date">2024-10-12</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="related-post-card">
+                <a href="#" class="related-post-card__link">
+                    <div class="related-post-card__photo">
+                        <img src="https://picsum.photos/300/200?random=3" alt="Losowe zdjęcie">
+                    </div>
+                    <div class="related-post-card__content">
+                        <span class="related-post-card__category related-post-card__category--blue">Kino godne polecenia</span>
+                        <h2 class="related-post-card__name">Lorem ipsum dolor sit amet consectetur.</h2>
+                        <p class="related-post-card__date">2024-10-12</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="related-post-card">
+                <a href="#" class="related-post-card__link">
+                    <div class="related-post-card__photo">
+                        <img src="https://picsum.photos/400/200?random=4" alt="Losowe zdjęcie">
+                    </div>
+                    <div class="related-post-card__content">
+                        <span class="related-post-card__category related-post-card__category--green">Inspiracja krótkim słowem</span>
+                        <h2 class="related-post-card__name">Lorem, ipsum dolor.</h2>
+                        <p class="related-post-card__date">2024-10-12</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+        <section class="content__category-posts">
+            <div class="category">
+                <div class="category__header">
+                    <h3 class="category__title">Muzyczne pomniki</h3>
+                    <hr class="category__separator category__separator--blue">
+                </div>
+                <div class="category__posts">
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=1" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=2" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=3" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=4" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=5" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=6" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="category__link category__link--blue">Zobacz więcej</a>
+            </div>
+            <div class="category">
+                <div class="category__header">
+                    <h3 class="category__title">Kino godne polecenia</h3>
+                    <hr class="category__separator category__separator--red">
+                </div>
+                <div class="category__posts">
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=1" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=2" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=3" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=4" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=5" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=6" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="category__link category__link--red">Zobacz więcej</a>
+            </div>
+            <div class="category">
+                <div class="category__header">
+                    <h3 class="category__title">Książki z górnej półki</h3>
+                    <hr class="category__separator category__separator--green">
+                </div>
+                <div class="category__posts">
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=1" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=2" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=3" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=4" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=5" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category-post-card">
+                        <a href="#" class="category-post-card__link">
+                            <div class="category-post-card__photo">
+                                <img src="https://picsum.photos/400/200?random=6" alt="Opis zdjęcia">
+                            </div>
+                            <div class="category-post-card__content">
+                                <h4 class="category-post-card__name">What’s happening in St. Catharines on the Thanksgiving long weekend</h4>
+                                <p class="category-post-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius a minus ipsam rem quia, iusto quas deleniti? Quasi eius minima, sit delectus perferendis exercitationem officiis voluptate animi rem! Iusto!</p>
+                                <p class="category-post-card__date">Oct 10, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="category__link category__link--green ">Zobacz więcej</a>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Mateusz Czerpak. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/43575f2aed.js" crossorigin="anonymous"></script>
+    <script src="static/script.js"></script>
+
+</body>
+
+</html>
