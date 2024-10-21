@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/post.css">
+    <title>Blog - Box Kultury</title>
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+    <!-- Header START -->
+    <header class="header sticky">
+        <div class="logo-container ">
+            <img id="logo-dark" class="theme-logo dark-theme-logo" src="static/images/logo-box-kultury-text-dark.svg"
+                alt="Logo Box Kultury">
+            <img id="logo-light" class="theme-logo light-theme-logo" src="static/images/logo-box-kultury-text-light.svg"
+                alt="Logo Box Kultury">
+            <h2>Zanurz się w świat kultury</h2>
+        </div>
+        <nav class="nav-bar" id="main-nav">
+            <!-- Sticky logo container -->
+            <div class="sticky-logo-container">
+                <img id="sticky-logo-dark" src="static/images/logo-box-kultury-dark.svg" alt="Logo Box Kultury"
+                    class="sticky-logo dark-theme-logo">
+                <img id="sticky-logo-light" src="static/images/logo-box-kultury-light.svg" alt="Logo Box Kultury"
+                    class="sticky-logo light-theme-logo">
+            </div>
+            <div class="responsive-logo-container">
+                <img id="responsive-logo-dark" class="theme-logo dark-theme-logo"
+                    src="static/images/logo-box-kultury-text-dark.svg" alt="Logo Box Kultury">
+                <img id="responsive-logo-light" class="theme-logo light-theme-logo"
+                    src="static/images/logo-box-kultury-text-light.svg" alt="Logo Box Kultury">
+            </div>
+            <!-- Container for centering the navigation menu -->
+            <div class="nav-menu-container">
+                <ul>
+                    <li><a class="nav-link" href="#">Muzyczne pomniki</a></li>
+                    <li><a class="nav-link" href="#">Kino godne polecenia</a></li>
+                    <li><a class="nav-link" href="#">Książki z górnej półki</a></li>
+                    <li><a class="nav-link" href="#">Inspiracja krótkim słowem</a></li>
+                </ul>
+            </div>
+
+            <!-- Theme toggle button and sidebar toggle button -->
+            <div class="menu-btn-container">
+                <button id="theme-toggle" class="menu-btn theme-btn" aria-label="Zmień motyw">
+                    <span id="theme-icon"><i class="fa-solid"></i></span>
+                </button>
+                <button id="sidebar-toggle" class="menu-btn sidebar-btn" aria-label="Otwórz menu">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Header END -->
+    <!-- Sidebar START-->
+    <aside class="sidebar" id="side-bar">
+        <button class="menu-btn" id="close-btn">
+            <span><i class="fa-solid fa-close"></i></span>
+        </button>
+        <div class="sidebar-logo">
+            <img id="logo-dark" class="theme-logo dark-theme-logo" src="static/images/logo-box-kultury-text-dark.svg"
+                alt="Logo Box Kultury">
+            <img id="logo-light" class="theme-logo light-theme-logo" src="static/images/logo-box-kultury-text-light.svg"
+                alt="Logo Box Kultury">
+        </div>
+
+        <ul>
+            <li><a href="#" class="nav-link">Start</a></li>
+            <li><a href="#" class="nav-link">O mnie</a></li>
+            <li><a href="#" class="nav-link">Kontakt</a></li>
+        </ul>
+
+        <div class="br-line"></div>
+
+        <ul>
+            <li><a href="#" class="nav-link">Muzyczne pomniki</a></li>
+            <li><a href="#" class="nav-link">Kino godne polecenia</a></li>
+            <li><a href="#" class="nav-link">Książki z górnej półki</a></li>
+            <li><a href="#" class="nav-link">Inspiracja krótkim słowem</a></li>
+            <li><a href="#" class="nav-link">W ogniu pytań</a></li>
+            <li><a href="#" class="nav-link">Epoki literackie</a></li>
+        </ul>
+
+        <!-- <div class="br-line"></div> -->
+    </aside>
+    <!-- Sidebar END -->
+
+    <main class="content-wrapper">
+        <article class="content-wrapper__post">
+            <header class="header-post">
+                <h1 class="header-post__title"></h1>
+                <p class="header-post__excerpt"></p>
+                <div class="header-post-info">
+                    <span class="header-post-info__author"></span>
+                    <span class="header-post-info__date"></span>
+                </div>
+            </header>
+            <section class="post-content"></section>
+            <aside class="post-aside"></aside>
+
+        </article>
+
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Mateusz Czerpak. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/43575f2aed.js" crossorigin="anonymous"></script>
+    <script src="static/script.js"></script>
+
+</body>
+
+</html>

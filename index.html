@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
-        rel="stylesheet"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="static/style.css">
@@ -20,7 +15,7 @@
 <body>
     <div class="overlay" id="overlay"></div>
     <!-- Header START -->
-    <header class="sticky">
+    <header class="header sticky">
         <div class="logo-container ">
             <img id="logo-dark" class="theme-logo dark-theme-logo" src="static/images/logo-box-kultury-text-dark.svg"
                 alt="Logo Box Kultury">
@@ -92,39 +87,41 @@
             <li><a href="#" class="nav-link">W ogniu pytań</a></li>
             <li><a href="#" class="nav-link">Epoki literackie</a></li>
         </ul>
-
-        <!-- <div class="br-line"></div> -->
     </aside>
     <!-- Sidebar END -->
 
     <main class="content-wrapper">
-        <section class="content__quotes">
-            <div class="quote">
-                <h2 class="quote__title">Cytat dnia</h2>
-                <div class="quote__content">
-                    <p class="quote__text">"Błądzę w ciemnościach wspomnień i w rezultacie mylę się w rzeczach bardzo
-                        zasadniczych"</p>
-                    <div class="quote__author">
-                        <strong>Antoine de Saint-Exupéry</strong> – z książki Mały Książę
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="content-wrapper__home">
+            <section class="content__quotes">
+                <article class="quote">
 
-        <section class="content__featured-posts">
-            <div class="featured-post-card">
-                <a href="#" class="featured-post-card__link">
+                    <h2 class="quote__title">Cytat dnia</h2>
+
+                    <div class="quote__content">
+                        <p class="quote__text">"Błądzę w ciemnościach wspomnień i w rezultacie mylę się w rzeczach
+                            bardzo
+                            zasadniczych"</p>
+                        <div class="quote__author">
+                            <strong>Antoine de Saint-Exupéry</strong> – z książki Mały Książę
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="content__featured-posts">
+                <article class="featured-post-card">
+                    <a href="post.html" class="featured-post-card__link">
                     <span class="featured-post-card__category featured-post-card__category--blue">Muzyczne pomniki</span>
                     <h2 class="featured-post-card__name">Muzyczna Podróż Dojrzewającego Weterana</h2>
                     <p class="featured-post-card__excerpt">Knopfler w "Privateering" snuje intymne opowieści o życiu i podróżach, łącząc blues, rock i folk w pełnej emocji, ponadczasowej muzyce.</p>
                     <p class="featured-post-card__date">2024-10-12</p>
                 </a>
-            </div>
-        </section>
+                </article>
+            </section>
 
-        <section class="content__related-posts">
-            <div class="related-post-card">
-                <a href="#" class="related-post-card__link">
+            <section class="content__related-posts">
+                <article class="related-post-card">
+                    <a href="post.html" class="related-post-card__link">
                     <div class="related-post-card__photo">
                         <img src="https://picsum.photos/300/200?random=1" alt="Losowe zdjęcie">
                     </div>
@@ -134,10 +131,10 @@
                         <p class="related-post-card__date">2024-10-12</p>
                     </div>
                 </a>
-            </div>
+                </article>
 
-            <div class="related-post-card">
-                <a href="#" class="related-post-card__link">
+                <article class="related-post-card">
+                    <a href="post.html" class="related-post-card__link">
                     <div class="related-post-card__photo">
                         <img src="https://picsum.photos/300/200?random=2" alt="Losowe zdjęcie">
                     </div>
@@ -147,10 +144,10 @@
                         <p class="related-post-card__date">2024-10-12</p>
                     </div>
                 </a>
-            </div>
+                </article>
 
-            <div class="related-post-card">
-                <a href="#" class="related-post-card__link">
+                <article class="related-post-card">
+                    <a href="post.html" class="related-post-card__link">
                     <div class="related-post-card__photo">
                         <img src="https://picsum.photos/300/200?random=3" alt="Losowe zdjęcie">
                     </div>
@@ -160,10 +157,10 @@
                         <p class="related-post-card__date">2024-10-12</p>
                     </div>
                 </a>
-            </div>
+                </article>
 
-            <div class="related-post-card">
-                <a href="#" class="related-post-card__link">
+                <article class="related-post-card">
+                    <a href="post.html" class="related-post-card__link">
                     <div class="related-post-card__photo">
                         <img src="https://picsum.photos/400/200?random=4" alt="Losowe zdjęcie">
                     </div>
@@ -173,19 +170,18 @@
                         <p class="related-post-card__date">2024-10-12</p>
                     </div>
                 </a>
-            </div>
-        </section>
+                </article>
+            </section>
 
-
-        <section class="content__category-posts">
-            <div class="category">
-                <div class="category__header">
-                    <h3 class="category__title">Muzyczne pomniki</h3>
-                    <hr class="category__separator category__separator--blue">
-                </div>
-                <div class="category__posts">
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+            <section class="content__category-posts">
+                <section class="category">
+                    <div class="category__header">
+                        <h3 class="category__title">Muzyczne pomniki</h3>
+                        <hr class="category__separator category__separator--blue">
+                    </div>
+                    <div class="category__posts">
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=1" alt="Opis zdjęcia">
                             </div>
@@ -195,9 +191,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=2" alt="Opis zdjęcia">
                             </div>
@@ -207,9 +204,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=3" alt="Opis zdjęcia">
                             </div>
@@ -219,9 +217,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=4" alt="Opis zdjęcia">
                             </div>
@@ -231,9 +230,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=5" alt="Opis zdjęcia">
                             </div>
@@ -243,9 +243,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=6" alt="Opis zdjęcia">
                             </div>
@@ -255,18 +256,19 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
+                        </article>
                     </div>
-                </div>
-                <a href="#" class="category__link category__link--blue">Zobacz więcej</a>
-            </div>
-            <div class="category">
-                <div class="category__header">
-                    <h3 class="category__title">Kino godne polecenia</h3>
-                    <hr class="category__separator category__separator--red">
-                </div>
-                <div class="category__posts">
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                    <a href="#" class="category__link category__link--blue">Zobacz więcej</a>
+                </section>
+
+                <section class="category">
+                    <div class="category__header">
+                        <h3 class="category__title">Kino godne polecenia</h3>
+                        <hr class="category__separator category__separator--red">
+                    </div>
+                    <div class="category__posts">
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=1" alt="Opis zdjęcia">
                             </div>
@@ -276,9 +278,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=2" alt="Opis zdjęcia">
                             </div>
@@ -288,9 +291,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=3" alt="Opis zdjęcia">
                             </div>
@@ -300,9 +304,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=4" alt="Opis zdjęcia">
                             </div>
@@ -312,9 +317,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=5" alt="Opis zdjęcia">
                             </div>
@@ -324,9 +330,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=6" alt="Opis zdjęcia">
                             </div>
@@ -336,18 +343,19 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
+                        </article>
                     </div>
-                </div>
-                <a href="#" class="category__link category__link--red">Zobacz więcej</a>
-            </div>
-            <div class="category">
-                <div class="category__header">
-                    <h3 class="category__title">Książki z górnej półki</h3>
-                    <hr class="category__separator category__separator--green">
-                </div>
-                <div class="category__posts">
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                    <a href="#" class="category__link category__link--red">Zobacz więcej</a>
+                </section>
+
+                <section class="category">
+                    <div class="category__header">
+                        <h3 class="category__title">Książki z górnej półki</h3>
+                        <hr class="category__separator category__separator--green">
+                    </div>
+                    <div class="category__posts">
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=1" alt="Opis zdjęcia">
                             </div>
@@ -357,9 +365,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=2" alt="Opis zdjęcia">
                             </div>
@@ -369,9 +378,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=3" alt="Opis zdjęcia">
                             </div>
@@ -381,9 +391,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=4" alt="Opis zdjęcia">
                             </div>
@@ -393,9 +404,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=5" alt="Opis zdjęcia">
                             </div>
@@ -405,9 +417,10 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="category-post-card">
-                        <a href="#" class="category-post-card__link">
+                        </article>
+
+                        <article class="category-post-card">
+                            <a href="#" class="category-post-card__link">
                             <div class="category-post-card__photo">
                                 <img src="https://picsum.photos/400/200?random=6" alt="Opis zdjęcia">
                             </div>
@@ -417,13 +430,12 @@
                                 <p class="category-post-card__date">Oct 10, 2024</p>
                             </div>
                         </a>
+                        </article>
                     </div>
-                </div>
-                <a href="#" class="category__link category__link--green ">Zobacz więcej</a>
-            </div>
-        </section>
-
-
+                    <a href="#" class="category__link category__link--green ">Zobacz więcej</a>
+                </section>
+            </section>
+        </div>
 
     </main>
     <footer class="footer">
