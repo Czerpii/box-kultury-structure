@@ -1,1 +1,132 @@
-.content-wrapper__post {}
+.content-wrapper__post {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "category category"
+        "post-header post-header"
+        "post-content post-aside";
+    margin-top: 20px;
+    color: var(--text-content-color);
+}
+
+.header-category {
+    grid-area: category;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #0077b5;
+    color: white;
+
+}
+
+.header-category__name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 15px;
+    background-color: #0077b5;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+
+/* HEADER START */
+.header-post {
+    grid-area: post-header;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 20px;
+
+}
+
+.header-post__title {
+    font-size: 5rem;
+}
+
+.header-post__excerpt {
+    margin: 10px 0;
+    font-size: 2.1rem;
+}
+
+.header-post-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.header-post-info__author {
+    padding-right: 10px;
+    margin-right: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-right: 1px solid var(--break-line-color);
+}
+
+.header-post-info__date {
+    font-size: 1.4rem;
+}
+
+.header-post-share {
+    display: flex;
+    margin: 0 20px;
+}
+
+.header-post-share a {
+    text-decoration: none;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.header-post-share i {
+    transition: transform var(--transition-duration) ease;
+}
+
+.header-post-share a:hover i {
+    transform: scale(1.1);
+}
+
+.share--facebook {
+    background-color: #3b5998;
+}
+
+.share--x {
+    background-color: #000;
+
+}
+
+.share--link {
+    background-color: #4caf50;
+}
+
+
+/* HEADER END */
+
+.post-content {
+    grid-area: post-content;
+    border-right: 1px solid var(--break-line-color);
+    padding-right: 20px;
+    font-size: 1.8rem;
+}
+
+.post-content p {
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+.post-aside {
+    grid-area: post-aside;
+    height: 100vh;
+    width: 100%;
+}

@@ -712,6 +712,43 @@ body.dark-theme .dark-theme-logo {
 
 @media (max-width: 1024px) {
 
+
+
+    .content-wrapper__home {
+        grid-template-rows: auto 2fr 1fr;
+        grid-template-areas:
+            "content__quotes content__quotes content__quotes"
+            "content__featured-posts content__featured-posts content__featured-posts"
+            "content__related-posts content__related-posts content__related-posts"
+            "category-posts category-posts category-posts";
+    }
+
+    .content__related-posts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .related-post-card {
+        flex-basis: 50%;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .category__posts {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .category-post-card {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+
     /* header */
     .header {
         padding-top: 0;
@@ -751,40 +788,6 @@ body.dark-theme .dark-theme-logo {
     }
 
     .content-wrapper__home {
-        grid-template-rows: auto 2fr 1fr;
-        grid-template-areas:
-            "content__quotes content__quotes content__quotes"
-            "content__featured-posts content__featured-posts content__featured-posts"
-            "content__related-posts content__related-posts content__related-posts"
-            "category-posts category-posts category-posts";
-    }
-
-    .content__related-posts {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-    }
-
-    .related-post-card {
-        flex-basis: 50%;
-    }
-
-}
-
-@media (max-width: 992px) {
-    .category__posts {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    .category-post-card {
-        padding: 10px 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .content-wrapper__home {
         grid-template-rows: auto;
     }
 
@@ -806,6 +809,7 @@ body.dark-theme .dark-theme-logo {
 
 
 @media (max-width: 650px) {
+
     .featured-post-card__link {
         padding: 20px;
     }
