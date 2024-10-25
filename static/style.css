@@ -9,6 +9,7 @@
     --background-color: #f3f4f6;
     --background-header-color: #111;
     --text-content-color: #000;
+    --text-opposite-color: #fff;
     --heading-color: #333;
     --break-line-color: #333;
     --box-shadow-color: rgba(0, 0, 0, 0.1)
@@ -18,6 +19,7 @@
 .dark-theme {
     --background-color: #171717;
     --text-content-color: #fff;
+    --text-opposite-color: #000;
     --heading-color: #aaa;
     --break-line-color: #888;
     --box-shadow-color: rgba(0, 0, 0, 0.6)
@@ -25,21 +27,21 @@
 
 /* CATEGORY POSTS COLOR */
 .featured-post-card__category--red,
-.related-post-card__category--red,
+.post-card__category--red,
 .category__separator--red,
 .category__link--red {
     background-color: #aa1414;
 }
 
 .featured-post-card__category--blue,
-.related-post-card__category--blue,
+.post-card__category--blue,
 .category__separator--blue,
 .category__link--blue {
     background-color: #0077b5;
 }
 
 .featured-post-card__category--green,
-.related-post-card__category--green,
+.post-card__category--green,
 .category__separator--green,
 .category__link--green {
     background-color: #64aa2a;
@@ -506,7 +508,7 @@ body.dark-theme .dark-theme-logo {
     align-items: flex-start;
 }
 
-.related-post-card {
+.post-card {
     display: flex;
     padding: 10px 5px;
     text-decoration: none;
@@ -514,7 +516,7 @@ body.dark-theme .dark-theme-logo {
     transition: scale var(--transition-duration) ease;
 }
 
-.related-post-card__link {
+.post-card__link {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -523,11 +525,11 @@ body.dark-theme .dark-theme-logo {
     color: inherit;
 }
 
-.related-post-card:hover {
+.post-card:hover {
     scale: 1.02;
 }
 
-.related-post-card__photo {
+.post-card__photo {
     flex-shrink: 0;
     flex-grow: 0;
     width: 100%;
@@ -539,13 +541,13 @@ body.dark-theme .dark-theme-logo {
     border-radius: 15px;
 }
 
-.related-post-card__photo img {
+.post-card__photo img {
     width: 150px;
     height: 100%;
     object-fit: cover;
 }
 
-.related-post-card__content {
+.post-card__content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -553,7 +555,7 @@ body.dark-theme .dark-theme-logo {
     padding: 0 10px;
 }
 
-.related-post-card__category {
+.post-card__category {
     padding: 5px 7px;
     font-size: 1.2rem;
     color: white;
@@ -561,7 +563,7 @@ body.dark-theme .dark-theme-logo {
     border-radius: 7px;
 }
 
-.related-post-card__name {
+.post-card__name {
     margin: 5px 0 10px;
     font-size: 1.8rem;
     font-weight: 500;
@@ -569,7 +571,7 @@ body.dark-theme .dark-theme-logo {
     color: var(--text-content-color);
 }
 
-.related-post-card__date {
+.post-card__date {
     font-size: 1.4rem;
     color: var(--text-content-color);
 }
@@ -730,7 +732,7 @@ body.dark-theme .dark-theme-logo {
 
     }
 
-    .related-post-card {
+    .post-card {
         flex-basis: 50%;
     }
 
@@ -798,7 +800,7 @@ body.dark-theme .dark-theme-logo {
 
     }
 
-    .related-post-card {
+    .post-card {
         flex-basis: 100%;
     }
 
@@ -838,11 +840,11 @@ body.dark-theme .dark-theme-logo {
         font-size: 1.9rem;
     }
 
-    .related-post-card__name {
+    .post-card__name {
         font-size: 1.7rem;
     }
 
-    .related-post-card__date {
+    .post-card__date {
         font-size: 1.3rem;
     }
 
@@ -905,11 +907,11 @@ body.dark-theme .dark-theme-logo {
         font-size: 1.2rem;
     }
 
-    .related-post-card__name {
+    .post-card__name {
         font-size: 1.6rem;
     }
 
-    .related-post-card__date {
+    .post-card__date {
         font-size: 1.2rem;
     }
 
@@ -994,11 +996,11 @@ body.dark-theme .dark-theme-logo {
         font-size: 1.2rem;
     }
 
-    .related-post-card__name {
+    .post-card__name {
         font-size: 1.6rem;
     }
 
-    .related-post-card__date {
+    .post-card__date {
         font-size: 1.2rem;
     }
 
@@ -1045,11 +1047,11 @@ body.dark-theme .dark-theme-logo {
     }
 
 
-    .related-post-card__name {
+    .post-card__name {
         font-size: 1.5rem;
     }
 
-    .related-post-card__date {
+    .post-card__date {
         font-size: 1.2rem;
     }
 
